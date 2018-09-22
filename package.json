@@ -4,6 +4,7 @@
   "description": "A backend server built using node and mongo to store user device id for push notifications and other stuff",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -8,7 +8,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/indiagovjobs");
+//mongoose.connect("mongodb://localhost:27017/indiagovjobs");
+mongoose.connect(process.env.MONGODB_URI);
 var deviceDetailsSchema = new mongoose.Schema({
     osType: String,
     deviceToken: String
